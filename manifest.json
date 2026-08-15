@@ -1,0 +1,24 @@
+{
+  "name": "Notlar & Makine Takip",
+  "short_name": "NotUygulamasi",
+  "description": "Google Girişli Bulut Destekli Not ve Makine Takip Uygulaması",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f8f9fa",
+  "theme_color": "#212529",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon-196.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
