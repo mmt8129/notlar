@@ -239,8 +239,8 @@ body {
 
   <div class="banner-right">
     <div class="hidden" id="makinaButonlari" style="display:flex; gap:6px;">
-      <button class="btn-banner-action" id="btnMakinaDuzenle">✏️ Düzenle</button>
-      <button class="btn-banner-action" id="btnMakinaYazdir" style="background:#4a5568;">🖨️ Yazdır</button>
+      <button class="btn-banner-action" id="btnMakinaDuzenle">✏️</button>
+      <button class="btn-banner-action" id="btnMakinaYazdir" style="background:#4a5568;">🖨️ </button>
       <button class="btn-banner-action" id="btnMakinaPdf" style="background:#4a5568;">📄 PDF</button>
     </div>
     <button class="btn-banner-action hidden" id="btnYeniNot">+ Yeni Not</button>
@@ -489,7 +489,7 @@ function makinaSec(kod) {
   notAlani.readOnly = true;
   
   duzenlemeModu = false;
-  btnMakinaDuzenle.textContent = '✏️ Düzenle';
+  btnMakinaDuzenle.textContent = '✏️';
   btnMakinaDuzenle.classList.remove('kaydet');
 }
 
@@ -500,14 +500,14 @@ btnMakinaDuzenle.onclick = () => {
   if (duzenlemeModu) {
     notAlani.readOnly = true;
     duzenlemeModu = false;
-    btnMakinaDuzenle.textContent = '✏️ Düzenle';
+    btnMakinaDuzenle.textContent = '✏️';
     btnMakinaDuzenle.classList.remove('kaydet');
     notlar[seciliMakina] = notAlani.value;
     veriKaydet();
   } else {
     notAlani.readOnly = false;
     duzenlemeModu = true;
-    btnMakinaDuzenle.textContent = '💾 Kaydet';
+    btnMakinaDuzenle.textContent = '💾 ';
     btnMakinaDuzenle.classList.add('kaydet');
     notAlani.focus();
   }
@@ -548,7 +548,7 @@ function anaSayfayaDon() {
   notAlani.value = '';
   seciliMakina = null;
   duzenlemeModu = false;
-  btnMakinaDuzenle.textContent = '✏️ Düzenle';
+  btnMakinaDuzenle.textContent = '✏️ ';
   btnMakinaDuzenle.classList.remove('kaydet');
 }
 
@@ -607,14 +607,14 @@ function notDetayAc(index) {
 function modalUstBannerGuncelle() {
   modalUstBanner.innerHTML = `
     <div class="modal-ust-sol">
-      <button class="btn-modal yesil" id="btnNotYazdir" title="Yazdır">🖨️</button>
-      <button class="btn-modal mavi" id="btnNotPdf" title="PDF Yap">📄</button>
+      <button class="btn-modal yesil" id="btnNotYazdir" title=" ">🖨️</button>
+      <button class="btn-modal mavi" id="btnNotPdf" title="PDF ">📄</button>
     </div>
     <div class="modal-ust-sag">
       <button class="btn-modal kirmizi" id="btnNotSil" title="Sil">🗑️</button>
-      <button class="btn-modal gri" id="btnNotDuzenleToggle" title="Düzenle">✏️</button>
-      <button class="btn-modal yesil" id="btnNotDetayKaydet" title="Kaydet">💾</button>
-      <button class="btn-modal kirmizi" id="btnNotDetayKapat" title="Kapat">✖️</button>
+      <button class="btn-modal gri" id="btnNotDuzenleToggle" title=" ">✏️</button>
+      <button class="btn-modal yesil" id="btnNotDetayKaydet" title=" ">💾</button>
+      <button class="btn-modal kirmizi" id="btnNotDetayKapat" title=" ">✖️</button>
     </div>
   `;
 
