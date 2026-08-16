@@ -1,7 +1,7 @@
 {
-  "name": "Notlar & Makine Takip",
-  "short_name": "NotUygulamasi",
-  "description": "Google Girişli Bulut Destekli Not ve Makine Takip Uygulaması",
+  "name": "Notlarım",
+  "short_name": "Not Uygulamasi",
+  "description": "Google Girişli Bulut Destekli Not Uygulaması",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#f8f9fa",
